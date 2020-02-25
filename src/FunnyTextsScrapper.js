@@ -78,4 +78,3 @@ function decodeHTMLEntities(text) {
 }
 
 module.exports = FunnyTextsScrappingService;
-module.exports.scrape = scrape;
