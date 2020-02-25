@@ -8,7 +8,7 @@ class FunnyTextsScrappingService {
 
     /**
      *
-     * @param scraper:()
+     * @param scraper:() => Promise<string>
      */
     constructor(scraper = scrape) {
         this.#scraper = scraper;
