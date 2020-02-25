@@ -1,0 +1,15 @@
+{
+  "name": "gabi-sample-vanila",
+  "scripts": {
+    "test": "mocha --exit --timeout 5000 'tests/**/*.js'",
+    "start": "node ./src/main.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "dom-parser": "^0.1.6"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0"
+  }
+}
