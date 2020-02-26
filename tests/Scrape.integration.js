@@ -17,9 +17,7 @@ describe('[integration] FunnyTextsScrappingService', function () {
 
 describe('[unit] FunnyTextsScrappingService', function () {
     it('should get latests texts from mocked bash.org.pl', async () => {
-        const scrapeMock = () => new Promise(async (resolve, reject) => {
-            resolve(await fs.readFileSync(`${__dirname}/fixtures/sample.html`, 'utf8'));
-        });
+        const scrapeMock = () => fs.readFileSync(`${__dirname}/fixtures/sample.html`, 'utf8');
 
         const result = await new FunnyTextsScrapper(scrapeMock).scrape(3);
 

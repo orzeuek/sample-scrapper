@@ -24,7 +24,7 @@ class FunnyTextsScrappingService {
     }
 }
 
-async function scrape() {
+function scrape() {
     return new Promise((resolve, reject) => {
         const request = http.get(URL, (resStream) => {
             let body = '';
